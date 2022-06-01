@@ -47,7 +47,7 @@ func (p *Producer) produce(max int) {
 
 func main() {
 
-	var items = make(chan int) // channel to send messages
+	var items = make(chan int) // channel to send items
 	var done = make(chan bool) // channel to control when production is done
 
 	// Start a goroutine for Produce.produce
